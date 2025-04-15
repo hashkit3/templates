@@ -10,6 +10,12 @@ export const AppHeader = ({ children }) => {
   const address = useAddress()
 
   return (
+    <HStack>
+      
+    </HStack>
+  )
+
+  return (
     <HStack px={6} pt={4}>
       <Link href="/">
         <Image src="/logo-2.svg" rounded="full" boxSize={34} />

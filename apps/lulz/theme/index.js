@@ -157,19 +157,19 @@ export const components = {
   },
   Button: {
     variants: {
-      solid: props => ({
-        bg: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
-        _hover: {
-          bg: props.colorMode == 'dark' ? 'gray.700' : 'gray.300',          
-        }
-      }),
-      outline: props => ({
-        borderWidth: 1,
-        borderColor: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
-        _hover: {
-          bg: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
-        }
-      })
+      // solid: props => ({
+      //   bg: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
+      //   _hover: {
+      //     bg: props.colorMode == 'dark' ? 'gray.700' : 'gray.300',          
+      //   }
+      // }),
+      // outline: props => ({
+      //   borderWidth: 1,
+      //   borderColor: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
+      //   _hover: {
+      //     bg: props.colorMode == 'dark' ? 'gray.900' : 'gray.100',
+      //   }
+      // })
     },
   }
 }

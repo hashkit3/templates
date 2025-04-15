@@ -1,0 +1,6 @@
+name = "lulz"
+type = "webpack"
+route = ''
+compatibility_flags = []
+compatibility_date = "2024-11-26"
+pages_build_output_dir = 'out'

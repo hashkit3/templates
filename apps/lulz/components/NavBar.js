@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 export const NavButton = ({ nav, active = false, theme, ...rest }) => (
   <VStack 
     py={2}
+    pb={4}
     _hover={{ bg: 'whiteAlpha.50', ...theme?.navActive }}
     cursor="pointer"
     key={nav?.key} 

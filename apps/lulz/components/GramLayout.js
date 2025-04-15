@@ -1,9 +1,9 @@
 import { Box, Center, Spinner, Text } from '@chakra-ui/react'
-import { useGram, useTelegramSetup } from '@hash3/react'
+import { useGram, useTelegramFullscreen, useTelegramSetup } from '@hash3/react'
 
-export const GramLayout = ({ children, theme, message = 'Preparing Telegram Account' }) => {
+export const GramLayout = ({ children, theme, message = 'Loading Telegram SDK' }) => {
   const gram = useGram()
-  useTelegramSetup()
+  useTelegramFullscreen()
 
   return (
     <Box

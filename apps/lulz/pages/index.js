@@ -1,3 +1,4 @@
+import { AgeVerification } from "@/components/AgeVerification"
 import { AppLayout } from "@/layouts/AppLayout"
 import { Box, Button, Heading, Stack } from "@chakra-ui/react"
 import { useAddress, useCurrentChatData, useTelegram, useTransfer, useTransferMemo, useWallet } from "@hash3/react"
@@ -27,14 +28,9 @@ export default function Home() {
 
   return (
     <AppLayout>
+      <AgeVerification />
       <Stack gap={4}>
-        <Heading>Base Build</Heading>
-        <Heading>{username}</Heading>
-        <Button onClick={wallet.connect}>Connect</Button>
-        <Box>{address || 'Not Connected'}</Box>
-        <Button onClick={handleTransfer}>Transfer</Button>
-        <Button onClick={gram.scanQR}>Scan QR</Button>
-        <Button onClick={gram.closeApp}>Close App</Button>
+        <Heading>Home</Heading>
       </Stack>
     </AppLayout>
   )

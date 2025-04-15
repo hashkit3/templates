@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "pub": "yarn build && npx wrangler pages deploy out",
+    "out": "npx wrangler pages deploy out",    
     "deps": "yarn add @hash3/react"
   },
   "dependencies": {
@@ -20,7 +22,8 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.3.0"
+    "react-icons": "^5.3.0",
+    "store": "^2.0.12"
   },
   "devDependencies": {}
 }

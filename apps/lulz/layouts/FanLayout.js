@@ -1,4 +1,4 @@
-import { Box, useToast } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import { useTelegramFullscreen, useTelegramLogin } from "@hash3/react"
 import { motion } from "framer-motion"
 import { AppHeader } from "./AppHeader"
@@ -6,31 +6,28 @@ import { GramLayout } from "@/components/GramLayout"
 import { FixedHeader } from "@/components/FixedHeader"
 import { FixedFooter } from "@/components/FixedFooter"
 import { NavBar } from "@/components/NavBar"
-import { TbArrowsExchange, TbArrowsExchange2, TbBell, TbBuildingCircus, TbCherry, TbHome, TbLockOpen, TbMessage, TbShoppingBag, TbSparkles, TbStar, TbSwitch, TbSwitchHorizontal, TbUserHexagon, TbUsers } from 'react-icons/tb'
-import { useRouter } from "next/router"
+import { TbArrowsExchange, TbArrowsExchange2, TbBell, TbBuildingCircus, TbHome, TbLockOpen, TbMessage, TbShoppingBag, TbSparkles, TbStar, TbSwitch, TbSwitchHorizontal, TbUserHexagon, TbUsers } from 'react-icons/tb'
 
-export const AppLayout = ({ children, footer }) => {
+export const FanLayout = ({ children, footer }) => {
   useTelegramLogin()
-  const toast = useToast()
-  const router = useRouter()
 
   const navs = [
     {
       key: 'home',
       url: '/',
-      // label: 'Home',
-      icon: <TbCherry fontSize={24} />
+      label: 'Home',
+      icon: <TbHome fontSize={24} />
     },
     {
       key: 'feed',
       url: '/feed',
-      // label: 'Feed',
+      label: 'Feed',
       icon: <TbStar fontSize={24} />
     },       
     {
       key: 'content',
       url: '/content',
-      // label: 'Content',
+      label: 'Content',
       icon: <TbLockOpen fontSize={24} />
     },
     // {
@@ -42,29 +39,14 @@ export const AppLayout = ({ children, footer }) => {
     {
       key: 'messages',
       url: '/messages',
-      // label: 'Messages',
+      label: 'Messages',
       icon: <TbMessage fontSize={24} />
     },  
     {
       key: 'creator',
       url: '/creator',
-      // label: 'Creator',
+      label: 'Creator',
       icon: <TbSwitchHorizontal fontSize={24} />,
-      onClick: () => {
-        toast({
-          title: 'Creator Mode',
-          position: 'bottom',
-          status: 'success',
-          duration: 1000,
-          containerStyle: {
-            pb: 8,
-            alignItems: 'center',
-            justifyItems: 'center',
-            textAlign: 'center',
-          }
-        })
-        router.push('/creator')
-      }
     },        
   ]  
 

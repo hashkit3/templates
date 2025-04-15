@@ -18,7 +18,7 @@ export const AppLoader = () => {
           </VStack>      
         </Center>
         <Box pos="absolute" textAlign="center" bottom={10} left={0} w="full">
-          <Text textAlign="center" fontSize={12} mb={2} color="whiteAlpha.500">Powered by <b>Xircus</b></Text>
+          <Text textAlign="center" fontSize={12} mb={2} color="whiteAlpha.500">Built on <b>HashKit</b></Text>
         </Box>
       </Box>
     </ChakraProvider>
